@@ -1,0 +1,22 @@
+.home-page-container {
+  height: 100%;
+  width: 100%;
+  padding: 5rem;
+}
+
+.todo-container {
+  background-color: transparent;
+  max-width: 35%;
+  min-height: 20%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--bg-light);
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
