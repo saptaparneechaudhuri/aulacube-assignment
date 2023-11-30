@@ -36,22 +36,8 @@ export const TodoProvider = ({ children }) => {
     // find if the item exits
     const existingItem = todoItems.find((item) => item.id === itemData.id);
     if (existingItem) {
-      console.log(itemData);
+      // console.log(itemData);
 
-      // setTodoItems((todos) =>
-      //   todos.map((todo) =>
-      //     todo.id === itemData.id
-      //       ? {
-      //           ...todo,
-      //           title: itemData.title,
-      //           description: itemData.description,
-      //           priority: itemData.priority,
-      //           isActive: true,
-      //           isChecked: false,
-      //         }
-      //       : todo
-      //   )
-      // );
       setTodoItems((todos) =>
         todos.map((todo) => {
           if (todo.id === itemData.id) {
@@ -85,12 +71,6 @@ export const TodoProvider = ({ children }) => {
     }
   };
 
-  const clearCompleted = () => {
-    // filter the active items and remove the rest
-    let newTodoItems = todoItems.filter((item) => item.isActive === true);
-    setTodoItems(newTodoItems);
-  };
-
   useEffect(() => {
     // update todo count, whenever the todoItems change
     handleTodoCount();
@@ -105,7 +85,7 @@ export const TodoProvider = ({ children }) => {
         removeTodoItem,
         handleTodoCount,
         todoCount,
-        clearCompleted,
+
         handleActiveAndCompleted,
       }}
     >

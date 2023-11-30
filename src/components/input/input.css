@@ -64,3 +64,18 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 900px) {
+  .form-fields label {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}

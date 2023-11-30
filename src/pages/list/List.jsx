@@ -6,7 +6,7 @@ import TodoContext from "../../context/TodoContext";
 import TodoItem from "../../components/todoItem/TodoItem";
 
 const List = () => {
-  const { todoItems, todoCount, clearCompleted } = useContext(TodoContext);
+  const { todoItems, todoCount } = useContext(TodoContext);
   const [todoList, setTodoList] = useState([]);
   const [filter, setFilter] = useState("all");
   const [showAll, setShowAll] = useState(true);
@@ -83,9 +83,7 @@ const List = () => {
             Completed
           </div>
         </div>
-        {/* <div className="footer-3" onClick={clearCompleted}>
-          Clear Completed
-        </div> */}
+
         <Link to="/" className="btn-back">
           Add Todo
         </Link>

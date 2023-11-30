@@ -59,3 +59,11 @@
 div.selected {
   color: var(--color-bg);
 }
+
+@media only screen and (max-width: 900px) {
+  .footer-1,
+  .footer-2,
+  .btn-back {
+    font-size: 1.2rem;
+  }
+}
