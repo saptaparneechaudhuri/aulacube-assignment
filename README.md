@@ -6,7 +6,7 @@ I am a physics post graduated turned web developer. My first project was with Dr
 I wanted to explore the React framework and out of my own interest I took courses and started coding few small projects which could be found on my github repo.
 So far my challenging project was user authentication using the MERN stack.
 
-# Getting Started with Create React App
+# Assignment: Getting Started with Create React App
 
 This project was bootstrapped with Create React App;
 
