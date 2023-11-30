@@ -85,7 +85,7 @@ const TodoItem = ({ todoItem }) => {
             )}
         </p>
         <i
-          className="fa-solid fa-xmark"
+          className="fa-solid fa-xmark fa-xl cross-icon"
           onClick={() => handleDelete(todoItem)}
         ></i>
       </div>
